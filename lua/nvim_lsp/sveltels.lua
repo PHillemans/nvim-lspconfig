@@ -3,7 +3,7 @@ local util = require'nvim_lsp.util'
 
 local bin_name = "svelteserver"
 
-configs.sveltels = {
+configs["sveltels"] = {
     default_config = {
         cmd = {bin_name};
         filetypes = {"svelte"};
