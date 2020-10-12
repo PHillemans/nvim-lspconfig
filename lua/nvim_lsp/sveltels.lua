@@ -1,5 +1,5 @@
-local configs = require'nvim_lsp'.configs
-local util = require'nvim_lsp'.util
+local configs = require'nvim_lsp.configs'
+local util = require'nvim_lsp.util'
 
 local bin_name = "svelteserver"
 
