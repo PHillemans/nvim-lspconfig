@@ -3,6 +3,7 @@ local util = require('nvim_lsp.util')
 
 local bin_name = "svelteserver"
 
+print(vim.inspect(configs))
 configs["sveltels"] = {
     default_config = {
         cmd = {bin_name, "--stdio"};
