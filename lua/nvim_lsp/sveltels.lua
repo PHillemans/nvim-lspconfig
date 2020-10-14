@@ -1,11 +1,11 @@
-local configs = require'nvim_lsp.configs'
-local util = require'nvim_lsp.util'
+local configs = require('nvim_lsp.configs')
+local util = require('nvim_lsp.util')
 
 local bin_name = "svelteserver"
 
 configs["sveltels"] = {
     default_config = {
-        cmd = {bin_name};
+        cmd = {bin_name, "--stdio"};
         filetypes = {"svelte"};
         root_dir = util.root_pattern("package.json", "svelte.js.config");
     };
