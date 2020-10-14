@@ -3,7 +3,7 @@ local util = require('nvim_lsp.util')
 
 local bin_name = "svelteserver"
 
-print(vim.inspect(configs))
+print(vim.inspect(configs.sveltels))
 configs["sveltels"] = {
     default_config = {
         cmd = {bin_name, "--stdio"};
@@ -22,3 +22,4 @@ Install through `npm i -g svelte-language-server`
         }
     }
 }
+print(vim.inspect(configs.sveltels))
